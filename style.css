@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fff;
+  }
+  
+  /* ------------------------Navbar Styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(123, 201, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    color: white;
+
+  }
+  
+  .logo {
+    height: 55px;
+    width: 55px;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #000000;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .about {
+    background-color: #ddd;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .contact {
+    background-color: #bbb;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      height: 60vh;
+      width: 200px;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0px;
+      background-color: rgb(104, 172, 2);
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translateY(13px);
+    }
+  
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translateY(-13px);
+    }
+}
+
+/*--------------------------------------------Home section---------------------------------------- */
+.heroSection{
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(57, 3, 254, 0.696),rgba(0, 255, 76, 0.5)),url('./images/img3.jpg');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.heroSection a{
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+.heroSection a:hover{
+  color: #ffffff;
+}
+.animated-text{
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  color: white;
+  animation: fadeIn 3s infinite alternate, moveText 3s infinite alternate;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.animated-image{
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: bounce 3s infinite alternate ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.animated-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.box-container{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+    
+}
+.box:hover{
+    transform: translateY(-5px);
+}
+/*--------------------------------------------About section---------------------------------------- */
