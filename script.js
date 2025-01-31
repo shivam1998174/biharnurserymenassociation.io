@@ -16,25 +16,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 
-// Add interactivity to text animation
-document.querySelector('.animated-text').addEventListener('mouseover', () => {
-  document.querySelector('.animated-text').style.color = '#000';
+// -------------------------------------------------------contact-page
+$(document).ready(function(){
+  $('#contactForm').submit(function(event){
+      event.preventDefault();
+      alert("Thank you! Your message has been sent.");
+      $(this).trigger("reset");
+  });
 });
-
-document.querySelector('.animated-text').addEventListener('mouseout', () => {
-  document.querySelector('.animated-text').style.color = 'white';
-});
-
-// Add interactivity to the image
-const image = document.querySelector('.animated-image');
-
-image.addEventListener('mouseover', () => {
-  image.style.filter = 'brightness(1.2)';
-});
-
-image.addEventListener('mouseout', () => {
-  image.style.filter = 'brightness(1)';
-});
-
 
 

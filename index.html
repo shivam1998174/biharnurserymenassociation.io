@@ -2,18 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biharnurserymenassociation</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .carousel-inner img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="navbar">
+    <!------------------------------------------------------------------------------------------------navbar-section -->
+    <header class="Navbar">
         <div class="logo">
-            <img src="images/logo.png">
+            <img src="images/logo.png" />
         </div>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -21,94 +38,482 @@
             <span></span>
         </div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
         </ul>
     </header>
 
-    <section id="home" class="section home">
-        <div class="heroSection">
-            <h1 class="text-center animated-text">BIHAR NURSERYMEN ASSOCIATION</h1>
-            <button class="btn btn-primary"><a href="#about">About me</a></button>
+    <section class="section home">
+        <!------------------------------------------------------------------------------------------------slider-section -->
+
+        <div class="slide-container p-0 mt-0 w-100">
+            <div id="autoSlider" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#autoSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#autoSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#autoSlider" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/img1.jpg" class="d-block w-100" alt="Slide 1" />
+                        <div class="carousel-caption">
+                            <h3>Welcome to Bihar Nurserymen Association</h3>
+                            <p>Promoting Sustainable Growth and Development</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img2.jpg" class="d-block w-100" alt="Slide 2" />
+                        <div class="carousel-caption">
+                            <h3>Plantation Drives</h3>
+                            <p class="text-wite">Join us in making Bihar greener and healthier!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img3.jpg" class="d-block w-100" alt="Slide 3" />
+                        <div class="carousel-caption">
+                            <h3>Community Engagement</h3>
+                            <p class="text-wite">Connecting with people to promote horticulture.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#autoSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#autoSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-        <div class="container">
-            <h1 class="pt-4">About Bihar Nurserymen Association</h1>
+
+        <!------------------------------------------------------------------------------------------------about-section -->
+
+        <div class="container" data-aos="fade-up">
+            <h1 class="pt-4 text-center">About Bihar Nurserymen Association</h1>
             <div class="row pt-5">
-                <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="home-about col-sm-12 col-md-12 col-lg-6">
                     <p>
-                        In the current scenario of Climate Change & depleting Ground Water,
-                        the weather patterns are disrupting the usual balance of nature.
-                        This pose many risks to human beings and all other forms of life on earth.
-                        Changes in temperature causes changes in rainfall & this leads to several problems like,
-                        drought in some areas & floods in others.
-                        The only solution to this problem is large scale plantation & conservation of ground water
-                        & controlled usages of natural resources. In this mission of saving our mother nature,
-                        we all need to contribute & this can happen only when we can connect it with the entire
-                        population of the state & the country. Now that’s where we Nurserymen & Progreesive
-                        Farmers decided to take this task in our hand & we as GREEN WARRIOR will lead from the
-                        front in this mission. We will work on large scale plantation drive & ground water
-                        conservation program in association with the Government, Private Institutions, NGOs,
+                        In the current scenario of Climate Change & depleting Ground
+                        Water, the weather patterns are disrupting the usual balance of
+                        nature. This pose many risks to human beings and all other forms
+                        of life on earth. Changes in temperature causes changes in
+                        rainfall & this leads to several problems like, drought in some
+                        areas & floods in others. The only solution to this problem is
+                        large scale plantation & conservation of ground water & controlled
+                        usages of natural resources. In this mission of saving our mother
+                        nature, we all need to contribute & this can happen only when we
+                        can connect it with the entire population of the state & the
+                        country. Now that’s where we Nurserymen & Progreesive Farmers
+                        decided to take this task in our hand & we as GREEN WARRIOR will
+                        lead from the front in this mission. We will work on large scale
+                        plantation drive & ground water conservation program in
+                        association with the Government, Private Institutions, NGOs,
                         Corporates, Schools & Colleges.
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <img src="images/img4.jpg" class="img-thumbnail animated-image" alt="...">
+                    <img src="images/img4.jpg" class="img-thumbnail animated-image" alt="..." />
                 </div>
             </div>
-            <div class="container">
-                <div class="row box-container mt-5 mb-5 gap-md-2">
-                    <div class="col-sm-12 col-md-3 col-lg-3 box">
-                        <h3 class="fs-2">President</h3>
-                        <p class="fs-5 text-light">A.K.Mani</p>
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3 box">
-                        <h3 class="fs-2">Secretary</h3>
-                        <p class="fs-5 text-light">Abhijeet Narayan</p>
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3 box">
-                        <h3 class="fs-2">Treasurer</h3>
-                        <p class="fs-5 text-light">Amrita</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 mb-4">
-                        <h2>Vision</h2>
-                        <p>•	To bring all people working in Nursery & its Allied sector under one platform which will help in mutual business development</p>
-                        <p>•	To transform from Unorganized Nursery Business to Organized Industry in Bihar</p>
-                    </div>
-                    <div class="col-12 mb-4">
-                        <h2>Mission</h2>
-                        <p>•	To convert Bihar from Plants Purchaser to Plants Grower/Producer & largest supplier in its native & traditional horticultural & Ornamental Plants across India</p>
-                        <p>•	To uplift businesses of Nurserymen & create employment in it through Skill Development in various gardening services</p>
-                        <p>•	To increase awareness & importance of plantation among Farmers & students to make them the green warrior</p>
-                    </div>
-                </div>
-                
-            </div>
-            
         </div>
-    </section>
+        <!----------------------------------------------------------------meet-our-leader-section -->
+        <!-- Meet Our Leaders Section -->
+        <section class="leader-section" >
+            <div class="container">
+                <h2 data-aos="fade-up">Meet Our Leaders</h2>
+                <div class="row">
+                    <!-- President Card -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card leader-card p-4">
+                            <img src="/images/img1.jpg" alt="A.K.Mani" class="leader-img">
+                            <h3 class="leader-name">A.K. Mani</h3>
+                            <p class="leader-role">President</p>
+                            <p class="leader-description">A.K. Mani, a visionary leader, is dedicated to steering the
+                                Green Warrior initiative towards a sustainable future through large-scale plantation and
+                                groundwater conservation efforts.</p>
+                        </div>
+                    </div>
 
-    <section id="about" class="section about">
-        <h1>About Us</h1>
-        <p>Learn more about us in this section.</p>
-    </section>
+                    <!-- Secretary Card -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card leader-card p-4">
+                            <img src="/images/img2.jpg" alt="Abhijeet Narayan" class="leader-img">
+                            <h3 class="leader-name">Abhijeet Narayan</h3>
+                            <p class="leader-role">Secretary</p>
+                            <p class="leader-description">Abhijeet Narayan is committed to expanding the Green Warrior
+                                mission, bringing together institutions, corporates, and the general public to actively
+                                participate in plantation and conservation efforts.</p>
+                        </div>
+                    </div>
 
-    <section id="contact" class="section contact">
-        <h1>Contact Us</h1>
-        <p>Get in touch with us here.</p>
+                    <!-- Treasurer Card -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card leader-card p-4">
+                            <img src="/images/img3.jpg" alt="Amrita" class="leader-img">
+                            <h3 class="leader-name">Amrita</h3>
+                            <p class="leader-role">Treasurer</p>
+                            <p class="leader-description">Amrita oversees the financial planning and resources
+                                allocation for the Green Warrior initiative, ensuring efficient implementation of
+                                large-scale projects for sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!------------------------------------------------------services-section -->
+
+        <!-- Hero Section -->
+        <section class="hero-section" data-aos="fade-up">
+            <h1>Our Services to Build a Greener, Sustainable Future</h1>
+            <p>Join us as we drive large-scale plantations, groundwater conservation, skill development, and more to
+                create a greener tomorrow.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="service-section">
+            <div class="container text-center">
+                <h2 class="mb-4" data-aos="fade-up">Our Key Services</h2>
+                <div class="row">
+                    <!-- Service 1: Nursery & Business Development -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card service-card p-4">
+                            <div class="service-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h4>Business Development</h4>
+                            <p>We aim to bring all stakeholders in the nursery & allied sectors under one platform for
+                                mutual business development and growth.</p>
+                            <button class="cta-button" data-bs-toggle="modal" data-bs-target="#businessModal">Learn
+                                More</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Transition to Organized Industry -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card service-card p-4">
+                            <div class="service-icon">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h4>Organizing the Industry</h4>
+                            <p>We strive to transform the nursery business in Bihar from an unorganized sector to a
+                                highly organized industry, promoting growth and sustainability.</p>
+                            <button class="cta-button" data-bs-toggle="modal" data-bs-target="#industryModal">Learn
+                                More</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Green Warrior Movement -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card service-card p-4">
+                            <div class="service-icon">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </div>
+                            <h4>Green Warrior Movement</h4>
+                            <p>We are working to convert Bihar from a plant purchaser to a plant grower, promoting
+                                large-scale plantation to make every citizen a green warrior.</p>
+                            <button class="cta-button" data-bs-toggle="modal" data-bs-target="#greenWarriorModal">Join
+                                the Mission</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4" >
+                    <!-- Service 4: Skill Development -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card service-card p-4">
+                            <div class="service-icon">
+                                <i class="bi bi-person-check"></i>
+                            </div>
+                            <h4>Skill Development</h4>
+                            <p>We provide skill development programs to uplift the businesses of nurserymen and create
+                                employment opportunities through various gardening services.</p>
+                            <button class="cta-button" data-bs-toggle="modal" data-bs-target="#skillModal">Learn
+                                More</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Groundwater Conservation -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card service-card p-4">
+                            <div class="service-icon">
+                                <i class="bi bi-droplet"></i>
+                            </div>
+                            <h4>Water Conservation</h4>
+                            <p>We focus on large-scale groundwater conservation programs to ensure sustainable water
+                                usage and protect our natural resources.</p>
+                            <button class="cta-button" data-bs-toggle="modal" data-bs-target="#waterModal">Learn
+                                More</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Awareness Programs -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card service-card p-4">
+                            <div class="service-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h4>Awareness Programs</h4>
+                            <p>We work on spreading awareness among farmers and students to make them understand the
+                                importance of plantation and environmental protection.</p>
+                            <button class="cta-button" data-bs-toggle="modal" data-bs-target="#awarenessModal">Get
+                                Involved</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals for each Service -->
+
+        <!-- Business Development Modal -->
+        <div class="modal fade" id="businessModal" tabindex="-1" aria-labelledby="businessModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" data-aos="fade-up">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="businessModalLabel">Business Development</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>We aim to bring all nurserymen and stakeholders together for business growth, knowledge
+                            sharing, and expanding the horticultural industry.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="mailto:contact@biharnurseryassociation.org" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Industry Modal -->
+        <div class="modal fade" id="industryModal" tabindex="-1" aria-labelledby="industryModalLabel"
+            aria-hidden="true" data-aos="fade-up">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="industryModalLabel">Transforming the Industry</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Our goal is to bring structure and organization to the nursery business in Bihar, creating a
+                            sustainable, professional industry.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="mailto:contact@biharnurseryassociation.org" class="btn btn-primary">Join Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Green Warrior Modal -->
+        <div class="modal fade" id="greenWarriorModal" tabindex="-1" aria-labelledby="greenWarriorModalLabel"
+            aria-hidden="true" data-aos="fade-up">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="greenWarriorModalLabel">Become a Green Warrior</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Help us in the mission of converting Bihar into the largest supplier of horticultural and
+                            ornamental plants in India. Together, we can make a difference.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="mailto:contact@biharnurseryassociation.org" class="btn btn-primary">Get Involved</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Get Involved Section -->
+        <section class="get-involved">
+            <div class="container text-center">
+                <h2 class="mb-4" data-aos="fade-up">How Can You Get Involved?</h2>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card">
+                            <div class="card-header">
+                                Plantation Drive
+                            </div>
+                            <div class="card-body">
+                                <p>Be a part of the large-scale plantation drives across Bihar. Help restore the green
+                                    cover and create a sustainable environment.</p>
+                                <button class="cta-button" data-bs-toggle="modal" data-bs-target="#plantationModal">Get
+                                    Involved</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card">
+                            <div class="card-header">
+                                Groundwater Conservation
+                            </div>
+                            <div class="card-body">
+                                <p>Participate in groundwater conservation programs to ensure the availability of water
+                                    for future generations.</p>
+                                <button class="cta-button" data-bs-toggle="modal" data-bs-target="#waterModal">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card">
+                            <div class="card-header">
+                                Collaborate with Us
+                            </div>
+                            <div class="card-body">
+                                <p>We need the support of organizations, institutions, and individuals. Join hands to
+                                    make a difference.</p>
+                                <button class="cta-button" data-bs-toggle="modal"
+                                    data-bs-target="#collaborateModal">Collaborate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal: Plantation -->
+        <div class="modal fade" id="plantationModal" tabindex="-1" aria-labelledby="plantationModalLabel"
+            aria-hidden="true" data-aos="fade-up">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="plantationModalLabel">Join the Plantation Drive</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Join our efforts in planting trees and restore the balance of nature. Together, we can bring
+                            back the greenery to Bihar. Register today!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="mailto:contact@biharnurseryassociation.org" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal: Water Conservation -->
+        <div class="modal fade" id="waterModal" tabindex="-1" aria-labelledby="waterModalLabel" aria-hidden="true" data-aos="fade-up">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="waterModalLabel">Groundwater Conservation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Learn how you can help conserve groundwater through rainwater harvesting, sustainable usage,
+                            and community awareness programs.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="mailto:contact@biharnurseryassociation.org" class="btn btn-primary">Get Involved</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal: Collaboration -->
+        <div class="modal fade" id="collaborateModal" tabindex="-1" aria-labelledby="collaborateModalLabel"
+            aria-hidden="true" data-aos="fade-up">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="collaborateModalLabel">Collaborate with Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>We invite corporates, NGOs, educational institutions, and government bodies to collaborate in
+                            the green mission for a better future.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="mailto:contact@biharnurseryassociation.org" class="btn btn-primary">Collaborate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Description -->
+                <div class="col-md-4">
+                    <img src="/images/logo.png" alt="Bihar Nurserymen Association" class="footer-logo">
+                    <p>The Bihar Nurserymen Association is committed to promoting sustainable horticulture practices,
+                        environmental conservation, and large-scale plantations across the state.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#index.html">Home</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Green Warrior Movement</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <ul>
+                        <li><i class="bi bi-geo-alt"></i> Patna, Bihar, India</li>
+                        <li><i class="bi bi-envelope"></i> contact@biharnurseryassociation.org</li>
+                        <li><i class="bi bi-telephone"></i> +91 123 456 7890</li>
+                    </ul>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Bihar Nurserymen Association. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap Icons CDN for social media icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS & Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+
 </body>
 
 </html>
